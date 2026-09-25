@@ -125,7 +125,7 @@ const removerTarefas = (somenteCompletas) => {
     document.querySelectorAll(seletor).forEach(elemento => {
         elemento.remove()
 })
-    tarefas = tarefasCompletas ? tarefas.filter(elemento => !elemento.completa) : []
+    tarefas = somenteCompletas ? tarefas.filter(elemento => !elemento.completa) : []
     atualizarTarefas()
 }
 
